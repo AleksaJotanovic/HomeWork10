@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <title>Welcome</title>
+    <style>
+        img{
+            width: 10em;
+            height: 10em;
+        }
+        @media(min-width: 1280px){
+            #mainDiv{
+                height: 60em;
+            }
+        }
+        @media(max-width: 1280px){
+            #mainDiv{
+                height: 60em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mainDiv" class="container text-center p-5">
+        <button id="btn1" class="btn btn-secondary">Click Me!</button>
+        <hr>
+        <p id="hitochange">Hi!</p>
+        <button id="btn2" class="btn btn-secondary">Change Text!</button>
+        <hr>
+        <div class="container">
+            <img id="img1" src="Resursi/hello.jpg">
+        </div>
+        <hr>
+        <div class="container">
+            <input id="radio1" type="radio" name="pol">
+            <label for="radio1">Male</label>
+            <br>
+            <input id="radio2" type="radio" name="pol">
+            <label for="radio2">Female</label>
+            <br>
+            <button id="gender-checker" class="btn btn-secondary">Check selected gender</button>
+            <p id="gender1" hidden="true">Selected Gender: Male</p>
+            <p id="gender2" hidden="true">Selected Gender: Female</p>
+            <p id="!selected" hidden="true">You have not selected any gender</p>
+        </div>
+        <hr>
+        <form class="p-1">
+            <div class="form-group">
+              <label for="fname">First Name:</label>
+              <input id="fname" type="text" class="form-control" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name:</label>
+              <input id="lname" type="text" class="form-control" placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label for="animal">Favorite Animal:</label>
+                <input id="animal" type="text" class="form-control" placeholder="Enter favorite animal">
+              </div>
+            <a href="support.html"><button type="button" id="submitbtn" class="btn btn-primary mt-2">Submit</button></a>
+        </form>
+        <button type="button" id="showbtn" class="btn btn-primary">Show input</button>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+    </div>
+
+
+
+
+    <script src="code.js"></script>
+</body>
+</html>
